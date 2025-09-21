@@ -14,7 +14,6 @@ h2 {
   padding: 10px 20px;
   border-radius: 8px;
 }
-
 .calendar {
   background: url("3.webp") no-repeat center center;
   background-size: cover;
@@ -24,7 +23,6 @@ h2 {
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
   width: 350px;
 }
-
 .calendar-header {
   display: flex;
   justify-content: space-between;
@@ -35,7 +33,6 @@ h2 {
   color: white;
   font-weight: bold;
 }
-
 .calendar-header button {
   background: none;
   border: none;
@@ -43,48 +40,40 @@ h2 {
   font-size: 20px;
   cursor: pointer;
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
-  background: transparent; /* fully transparent to show the image */
+  background: transparent; 
 }
-
 th {
   color: #fff;
   font-weight: bold;
   text-align: center;
   padding: 6px;
-  background: rgba(0,0,0,0.3); /* slight translucent black for readability */
+  background: rgba(0,0,0,0.3);
   border-radius: 4px;
 }
-
 td {
   text-align: center;
   padding: 10px;
   border-radius: 6px;
   color: #fff;
 }
-
 td:hover {
   background: rgba(255,255,255,0.2);
 }
-
 .holiday {
   background: rgba(255,107,107,0.8);
   color: white;
   font-weight: bold;
   cursor: pointer;
 }
-
 td.week {
   background: rgba(0,0,0,0.3);
   font-weight: bold;
   cursor: default;
 }
-
-/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -94,7 +83,6 @@ td.week {
   justify-content: center;
   align-items: center;
 }
-
 .modal-content {
   background: #fff;
   padding: 20px;
@@ -103,7 +91,6 @@ td.week {
   text-align: center;
   color: #333;
 }
-
 .modal-content button {
   margin-top: 10px;
   padding: 8px 12px;
@@ -113,5 +100,6 @@ td.week {
   border-radius: 6px;
   cursor: pointer;
 }
+
 
 
