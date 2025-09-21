@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar 2020</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Calendar 2020</h2>
+
+  <div class="calendar">
+    <div class="calendar-header">
+      <button id="prev">&#10094;</button>
+      <div id="monthYear"></div>
+      <button id="next">&#10095;</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Wk</th>
+          <th>S</th><th>M</th><th>T</th><th>W</th>
+          <th>T</th><th>F</th><th>S</th>
+        </tr>
+      </thead>
+      <tbody id="calendar-body"></tbody>
+    </table>
+  </div>
+
+  <div class="modal" id="holidayModal">
+    <div class="modal-content">
+      <h3 id="holidayTitle"></h3>
+      <p id="holidayDesc"></p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
