@@ -27,7 +27,6 @@ const monthNames = ["January","February","March","April","May","June",
 const calendarBody = document.getElementById("calendar-body");
 const monthYear = document.getElementById("monthYear");
 
-// Get ISO week number
 function getWeekNumber(d) {
   d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
   d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
@@ -46,7 +45,6 @@ function generateCalendar(month, year) {
   for (let i = 0; i < 6; i++) {
     let row = document.createElement("tr");
 
-    // Week number
     let weekDate = new Date(year, month, date || 1);
     let weekNumber = getWeekNumber(weekDate);
     let weekCell = document.createElement("td");
@@ -97,7 +95,6 @@ document.getElementById("next").onclick = () => {
   generateCalendar(currentMonth, currentYear);
 };
 
-// Close modal when clicking outside
 window.onclick = function(event) {
   if (event.target == document.getElementById("holidayModal")) {
     closeModal();
@@ -105,3 +102,4 @@ window.onclick = function(event) {
 };
 
 generateCalendar(currentMonth, currentYear);
+
