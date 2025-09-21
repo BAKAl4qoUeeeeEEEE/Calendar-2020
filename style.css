@@ -8,7 +8,6 @@ body {
   background: #0b92eb;
   color: rgb(21, 115, 222);
 }
-
 h2 {
   background: rgba(0,0,0,0.6);
   padding: 10px 20px;
@@ -100,6 +99,7 @@ td.week {
   border-radius: 6px;
   cursor: pointer;
 }
+
 
 
 
